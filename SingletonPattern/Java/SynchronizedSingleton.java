@@ -5,7 +5,8 @@ public class SynchronizedSingleton
     private SynchronizedSingleton()
     {
     }
-    
+
+    // Make sure that only one thread can access the instance
     synchronized static public SynchronizedSingleton getInstance() 
     {
         if (instance == null) 
