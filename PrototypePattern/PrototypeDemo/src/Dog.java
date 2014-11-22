@@ -1,6 +1,6 @@
 public class Dog implements Prototype
 {
-    String sound;
+    private String sound;
 
     public Dog(String sound)
     {
