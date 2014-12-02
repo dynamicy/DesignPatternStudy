@@ -1,19 +1,28 @@
+import com.sun.istack.internal.Nullable;
+
 public class AnimalFactory
 {
-    // Create the instance by parameter
-    public Animal getAnimal(String animalType)
+    // Create the instance by parameter, and it's a static method
+    public static Animal createAnimal(String animalType)
     {
-        if("canine".equals(animalType))
+        Animal animal = null;
+
+        if (animalType.equals("canine"))
         {
-            return new Dog();
+            animal = new Dog();
         }
-        else if("feline".equals(animalType))
+        else if (animalType.equals("feline"))
         {
-            return new Cat();
+            animal = new Cat();
+        }
+        else if (animalType.equals("vulpine"))
+        {
+            animal = new Fox();
         }
         else
         {
-            return new Lion();
+            animal = new Monster();
         }
+        return animal;
     }
 }
