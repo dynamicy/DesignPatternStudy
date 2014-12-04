@@ -2,8 +2,8 @@ class Main
 {
     public static void main(String[] args)
     {
-        Singleton singletonInstance1 = Singleton.GetInstance();
-        Singleton singletonInstance2 = Singleton.GetInstance();
+        Singleton singletonInstance1 = Singleton.getInstance();
+        Singleton singletonInstance2 = Singleton.getInstance();
 
         if(singletonInstance1 == singletonInstance2)
         {

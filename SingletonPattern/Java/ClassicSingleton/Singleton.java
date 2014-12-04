@@ -6,7 +6,7 @@ class Singleton
     private Singleton() {}
 
     // If other memebers want to get instance, they have to use this method.
-    public static Singleton GetInstance()
+    public static Singleton getInstance()
     {
         if(instance == null)
         {
