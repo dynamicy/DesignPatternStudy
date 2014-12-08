@@ -1,4 +1,4 @@
-public class Person implements Prototype
+public class Person implements IPrototype
 {
     private String name;
     private String id;
@@ -26,9 +26,9 @@ public class Person implements Prototype
         this.age = age;
     }
 
-    // Make a copy from Prototype
+    // Make a copy from IPrototype
     @Override
-    public Prototype doClone()
+    public IPrototype doClone()
     {
         return new Person(name, id, age);
     }

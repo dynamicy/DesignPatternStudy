@@ -1,4 +1,4 @@
-public class Dog implements Prototype
+public class Dog implements IPrototype
 {
     private String sound;
 
@@ -7,9 +7,9 @@ public class Dog implements Prototype
         this.sound = sound;
     }
 
-    // Make a copy from Prototype
+    // Make a copy from IPrototype
     @Override
-    public Prototype doClone()
+    public IPrototype doClone()
     {
         return new Dog(sound);
     }
