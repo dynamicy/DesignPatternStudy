@@ -9,19 +9,19 @@ namespace DesignPatthenStudy
         public static void Main()
         {
             AbstractFactory tFactory = null;
-            AbstractProduct_PotatoChip bPotatoChip = null;
-            AbstractProduct_Chocolate bChocolate = null;
+            AbstractProductPotatoChip bPotatoChip = null;
+            AbstractProductChocolate bChocolate = null;
 
-            tFactory = new Factory_A();
-            bPotatoChip = tFactory.Create_PotatoChip();
+            tFactory = new FactoryA();
+            bPotatoChip = tFactory.CreatePotatoChip();
             bPotatoChip.GenaratePotatoChip();
-            bChocolate = tFactory.Create_Chocolate();
+            bChocolate = tFactory.CreateChocolate();
             bChocolate.GenarateChocolate();
 
-            tFactory = new Factory_B();
-            bPotatoChip = tFactory.Create_PotatoChip();
+            tFactory = new FactoryB();
+            bPotatoChip = tFactory.CreatePotatoChip();
             bPotatoChip.GenaratePotatoChip();
-            bChocolate = tFactory.Create_Chocolate();
+            bChocolate = tFactory.CreateChocolate();
             bChocolate.GenarateChocolate();
         }
     }

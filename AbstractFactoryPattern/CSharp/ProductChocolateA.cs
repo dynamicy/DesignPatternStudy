@@ -4,11 +4,11 @@ using System.Text;
 
 namespace DesignPatthenStudy
 {
-    class Product_Chocolate_B : AbstractProduct_Chocolate
+    class ProductChocolateA : AbstractProductChocolate
     {
         public override void GenarateChocolate()
         {
-            Console.WriteLine("Generate Chocolate B");
+            Console.WriteLine("Generate Chocolate A");
         }
     }
 }

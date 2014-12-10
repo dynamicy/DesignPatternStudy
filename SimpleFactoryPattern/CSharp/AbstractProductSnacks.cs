@@ -4,8 +4,8 @@ using System.Text;
 
 namespace DesignPatthenStudy
 {
-    abstract class AbstractProduct_PotatoChip
+    abstract class AbstractProductSnacks
     {
-        public abstract void GenaratePotatoChip();
+        public abstract void GenarateSnacks();
     }
 }

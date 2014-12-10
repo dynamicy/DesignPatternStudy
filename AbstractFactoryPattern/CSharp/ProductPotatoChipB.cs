@@ -4,11 +4,11 @@ using System.Text;
 
 namespace DesignPatthenStudy
 {
-    class Product_PotatoChip_A : AbstractProduct_PotatoChip
+    class ProductPotatoChipB : AbstractProductPotatoChip
     {
         public override void GenaratePotatoChip()
         {
-            Console.WriteLine("Generate PotatoChip A");
+            Console.WriteLine("Generate PotatoChip B");
         }
     }
 }
