@@ -1,19 +1,16 @@
 DesignPatternStudy
 ==================
 #Creational Pattern:
-###1. Prototype Pattern:
-
-###2. Singleton Pattern:
-
-###3. Builder Pattern:
-
-###4. Registry of Singleton Pattern:
-
-###5. Simple Factory Pattern:
-
-###6. Factory Method Pattern:
-
-###7. Abstract Factory Pattern:
+## |------ 1. Prototype Pattern <br>
+## |------ 2. Singleton Pattern <br>
+## |------ 3. Builder Pattern <br>
+## |------ 4. Registry of Singleton Pattern <br>
+## |------ 5. Simple Factory Pattern <br>
+## |------ 6. Factory Method Pattern <br>
+## |------ 7. Abstract Factory Pattern: <br>
+#Structural Pattern:
+## |------ 1. Composite Pattern <br>
+## |------ 2. Bridge Pattern <br>
 
 Our Discussion:
 https://designpattern.hackpad.com/The-Design-Pattern-Study-Group-of-Greeks-7hFUlBCoSNo
