@@ -11,6 +11,8 @@ DesignPatternStudy
 #Structural Pattern:
 ## |------ 1. Composite Pattern <br>
 ## |------ 2. Bridge Pattern <br>
+## |------ 3. Flyweight Pattern <br>
+## |------ 4. Proxy Pattern <br>
 
 Our Discussion:
 https://designpattern.hackpad.com/The-Design-Pattern-Study-Group-of-Greeks-7hFUlBCoSNo
