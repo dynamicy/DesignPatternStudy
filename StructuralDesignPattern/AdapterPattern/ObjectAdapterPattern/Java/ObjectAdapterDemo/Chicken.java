@@ -1,6 +1,6 @@
 public class Chicken
 {
-    public void chickenSound()
+    void chickenSound()
     {
         System.out.println("Go go go!");
     }

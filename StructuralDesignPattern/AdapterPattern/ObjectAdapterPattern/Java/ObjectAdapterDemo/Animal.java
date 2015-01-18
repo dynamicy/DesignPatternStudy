@@ -1,4 +1,4 @@
-public abstract class Animal
+public interface Animal
 {
     public abstract void makeSound();
 }
