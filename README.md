@@ -17,7 +17,9 @@ DesignPatternStudy
 ## |------ 6. Default Adapter Pattern <br>
 ## |------ 7. Object Adapter Pattern <br>
 ## |------ 8. Class Adapter Pattern <br>
-#Structural Pattern:
+#Behavioral Pattern:
+## |------ 1. Chain of Responsibility Pattern <br>
+## |------ 2. Command Pattern <br>
 
 Our Discussion:
 https://designpattern.hackpad.com/The-Design-Pattern-Study-Group-of-Greeks-7hFUlBCoSNo
