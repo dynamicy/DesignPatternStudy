@@ -20,6 +20,8 @@ DesignPatternStudy
 #Behavioral Pattern:
 ## |------ 1. Chain of Responsibility Pattern <br>
 ## |------ 2. Command Pattern <br>
+## |------ 3. Strategy Pattern <br>
+## |------ 4. Iterator Pattern <br>
 
 Our Discussion:
 https://designpattern.hackpad.com/The-Design-Pattern-Study-Group-of-Greeks-7hFUlBCoSNo
