@@ -1,4 +1,4 @@
-public class SubstractOperation implements Strategy
+public class SubstractOperation implements IStrategy
 {
     @Override
     public int doOperation(int number1, int number2)

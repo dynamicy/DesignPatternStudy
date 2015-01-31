@@ -1,4 +1,4 @@
-public class AddOperation implements Strategy
+public class AddOperation implements IStrategy
 {
     @Override
     public int doOperation(int number1, int number2)
