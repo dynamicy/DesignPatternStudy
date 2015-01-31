@@ -11,8 +11,8 @@ public class Main
 
     private static AbstractLogger getLoggers()
     {
-        AbstractLogger debugLogger = new DebugLogger(AbstractLogger.KERN_EMERG);
-        AbstractLogger consoleLogger = new ConsoleLogger(AbstractLogger.KERN_DEBUG);
+        AbstractLogger debugLogger = new DebugLogger(AbstractLogger.KERN_DEBUG);
+        AbstractLogger consoleLogger = new ConsoleLogger(AbstractLogger.KERN_EMERG);
 
         debugLogger.setLogger(consoleLogger);
 
