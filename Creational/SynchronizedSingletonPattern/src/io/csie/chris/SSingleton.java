@@ -1,4 +1,7 @@
+package io.csie.chris;
+
 public class SSingleton {
+
     private static SSingleton instance = null;
 
     private SSingleton() {
