@@ -1,6 +1,7 @@
-package tw.hacker.java;
+package io.csie.chris.tv;
 
 public class SonyTV implements ITV {
+
     @Override
     public void on() {
         System.out.println("Sony TV on!");

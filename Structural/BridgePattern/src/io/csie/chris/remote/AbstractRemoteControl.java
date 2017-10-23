@@ -1,6 +1,9 @@
-package tw.hacker.java;
+package io.csie.chris.remote;
+
+import io.csie.chris.tv.ITV;
 
 public abstract class AbstractRemoteControl {
+
     private ITV tv;
 
     public AbstractRemoteControl(ITV tv) {
