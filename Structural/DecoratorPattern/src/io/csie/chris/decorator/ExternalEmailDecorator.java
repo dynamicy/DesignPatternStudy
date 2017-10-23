@@ -1,4 +1,9 @@
+package io.csie.chris.decorator;
+
+import io.csie.chris.email.IEmail;
+
 public class ExternalEmailDecorator extends EmailDecorator {
+
     private String content;
 
     public ExternalEmailDecorator(IEmail iEmail) {

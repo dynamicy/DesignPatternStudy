@@ -1,4 +1,9 @@
+package io.csie.chris.decorator;
+
+import io.csie.chris.email.IEmail;
+
 public class SecureEmailDecorator extends EmailDecorator {
+
     private String content;
 
     public SecureEmailDecorator(IEmail iEmail) {
@@ -12,7 +17,6 @@ public class SecureEmailDecorator extends EmailDecorator {
     }
 
     private String encryptEmailContent(String message) {
-        String temp = new StringBuilder(message).reverse().toString();
-        return temp;
+        return new StringBuilder(message).reverse().toString();
     }
 }
