@@ -1,4 +1,7 @@
+package io.csie.chris.shape;
+
 public class Circle implements IShape {
+
     private String color;
 
     public Circle(String color) {

@@ -1,3 +1,6 @@
+import io.csie.chris.factory.ShapeFactory;
+import io.csie.chris.shape.Circle;
+
 public class Main {
     private static final String colors[] = {"Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Purple"};
 
