@@ -1,4 +1,7 @@
+package io.csie.chris;
+
 public class DCLSingleton {
+
     // Use volatile to ensure that works on multithread.
     private volatile static DCLSingleton instance = null;
 
