@@ -1,4 +1,9 @@
+package io.csie.chris.prototype;
+
+import io.csie.chris.prototype.common.IPrototype;
+
 public class Person implements IPrototype {
+
     private String name;
     private String id;
     private int age;
@@ -21,7 +26,7 @@ public class Person implements IPrototype {
         this.age = age;
     }
 
-    // Make a copy from IPrototype
+    // Make a copy from io.csie.chris.prototype.common.IPrototype
     @Override
     public IPrototype doClone() {
         return new Person(name, id, age);

@@ -1,5 +1,12 @@
+package io.csie.chris;
+
+import io.csie.chris.prototype.Dog;
+import io.csie.chris.prototype.Person;
+
 public class Main {
+
     public static void main(String args[]) {
+
         Person person1 = new Person("Chris", "1234567", 25);
         System.out.println(person1.displayInfo());
 

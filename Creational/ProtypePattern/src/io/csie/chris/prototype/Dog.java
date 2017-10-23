@@ -1,11 +1,16 @@
+package io.csie.chris.prototype;
+
+import io.csie.chris.prototype.common.IPrototype;
+
 public class Dog implements IPrototype {
+
     private String sound;
 
     public Dog(String sound) {
         this.sound = sound;
     }
 
-    // Make a copy from IPrototype
+    // Make a copy from io.csie.chris.prototype.common.IPrototype
     @Override
     public IPrototype doClone() {
         return new Dog(sound);
