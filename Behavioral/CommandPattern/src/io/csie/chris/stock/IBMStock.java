@@ -1,6 +1,11 @@
-public class IBMStock implements Stock {
-    String name;
-    int quantity;
+package io.csie.chris.stock;
+
+import io.csie.chris.stock.common.IStock;
+
+public class IBMStock implements IStock {
+
+    private String name;
+    private int quantity;
 
     IBMStock() {
         this.name = "IBM";

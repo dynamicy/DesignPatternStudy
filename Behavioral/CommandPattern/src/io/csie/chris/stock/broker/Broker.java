@@ -1,8 +1,13 @@
+package io.csie.chris.stock.broker;
+
+import io.csie.chris.stock.common.Order;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Broker {
-    private List<Order> orderList = new ArrayList<Order>();
+
+    private List<Order> orderList = new ArrayList<>();
 
     public void takeOrder(Order order) {
         orderList.add(order);
