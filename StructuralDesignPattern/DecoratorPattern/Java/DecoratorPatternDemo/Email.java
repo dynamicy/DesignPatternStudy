@@ -1,15 +1,12 @@
-public class Email implements IEmail
-{
+public class Email implements IEmail {
     private String content;
 
-    public Email(String content)
-    {
+    public Email(String content) {
         this.content = content;
     }
 
     @Override
-    public String getContents()
-    {
+    public String getContents() {
         return this.content;
     }
 }

@@ -1,7 +1,5 @@
-public class Main
-{
-    public static void main(String args[])
-    {
+public class Main {
+    public static void main(String args[]) {
         AbstractFactory abstractFactory = new AbstractFactory();
 
         SpeciesFactory speciesFactory1 = abstractFactory.getSpeciesFactory("reptile");

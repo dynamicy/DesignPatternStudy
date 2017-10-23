@@ -1,23 +1,19 @@
-public class IBMStock implements Stock
-{
+public class IBMStock implements Stock {
     String name;
     int quantity;
 
-    IBMStock()
-    {
+    IBMStock() {
         this.name = "IBM";
         this.quantity = 100;
     }
 
     @Override
-    public void buy()
-    {
+    public void buy() {
         System.out.println("[Buy] Stock name: " + name + " quantity: " + quantity);
     }
 
     @Override
-    public void sell()
-    {
+    public void sell() {
         System.out.println("[Sell] Stock name: " + name + " quantity: " + quantity);
     }
 }

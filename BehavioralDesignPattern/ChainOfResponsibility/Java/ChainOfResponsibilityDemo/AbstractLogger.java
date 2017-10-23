@@ -1,5 +1,4 @@
-public abstract class AbstractLogger
-{
+public abstract class AbstractLogger {
     /* Define the level, 1 the heightest one. */
     public static int KERN_EMERG = 1;
     public static int KERN_ALERT = 2;
@@ -11,30 +10,25 @@ public abstract class AbstractLogger
 
     protected int level;
 
-    public AbstractLogger(int level)
-    {
+    public AbstractLogger(int level) {
         this.level = level;
     }
 
     /* The next logger in the chain of responsibility */
     protected AbstractLogger nextLogger;
 
-    public void setLogger(AbstractLogger nextLogger)
-    {
+    public void setLogger(AbstractLogger nextLogger) {
         this.nextLogger = nextLogger;
     }
 
     abstract protected void writeMessage(String msg);
 
-    public void showMessage(int priority, String msg)
-    {
-        if(priority <= level)
-        {
+    public void showMessage(int priority, String msg) {
+        if (priority <= level) {
             writeMessage(msg);
         }
 
-        if(nextLogger != null)
-        {
+        if (nextLogger != null) {
             nextLogger.showMessage(priority, msg);
         }
     }

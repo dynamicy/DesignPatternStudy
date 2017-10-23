@@ -1,7 +1,5 @@
-public class Main
-{
-    public static void main(String[] args)
-    {
+public class Main {
+    public static void main(String[] args) {
         AbstractLogger loggerChain = getLoggers();
 
         loggerChain.showMessage(AbstractLogger.KERN_EMERG, "Start kernel stracing.");
@@ -9,8 +7,7 @@ public class Main
         loggerChain.showMessage(AbstractLogger.KERN_DEBUG, "An error occured.");
     }
 
-    private static AbstractLogger getLoggers()
-    {
+    private static AbstractLogger getLoggers() {
         AbstractLogger debugLogger = new DebugLogger(AbstractLogger.KERN_DEBUG);
         AbstractLogger consoleLogger = new ConsoleLogger(AbstractLogger.KERN_EMERG);
 

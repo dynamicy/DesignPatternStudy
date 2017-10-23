@@ -1,10 +1,8 @@
 package tw.hacker.java;
 
-public class HardDrive implements IComponent
-{
+public class HardDrive implements IComponent {
     @Override
-    public void doProcessing()
-    {
+    public void doProcessing() {
         System.out.println("Hard drive is processing.");
     }
 }

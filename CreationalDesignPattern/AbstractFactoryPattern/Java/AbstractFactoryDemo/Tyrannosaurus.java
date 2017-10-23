@@ -1,8 +1,6 @@
-public class Tyrannosaurus extends Animal
-{
+public class Tyrannosaurus extends Animal {
     @Override
-    public String makeSound()
-    {
+    public String makeSound() {
         return "Haou";
     }
 }

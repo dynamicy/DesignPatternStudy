@@ -1,13 +1,12 @@
-public class ESingleton
-{
+public class ESingleton {
     // Use static initiallizer, that will make instace created fast.
     private static ESingleton instance = new ESingleton();
 
-    private ESingleton() {}
+    private ESingleton() {
+    }
 
     // Just get the instance
-    public static ESingleton getInstance()
-    {
+    public static ESingleton getInstance() {
         return instance;
     }
 }

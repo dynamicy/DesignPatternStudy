@@ -1,8 +1,6 @@
-public class ChickenAdapter extends Chicken  implements Animal
-{
+public class ChickenAdapter extends Chicken implements Animal {
     @Override
-    public void makeSound()
-    {
+    public void makeSound() {
         chickenSound();
     }
 }

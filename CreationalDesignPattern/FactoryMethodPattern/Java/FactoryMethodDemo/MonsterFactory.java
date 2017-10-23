@@ -1,8 +1,6 @@
-public class MonsterFactory implements IAnimalFactory
-{
+public class MonsterFactory implements IAnimalFactory {
     @Override
-    public Animal createAnimal()
-    {
+    public Animal createAnimal() {
         return new Monster();
     }
 }

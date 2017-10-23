@@ -1,7 +1,5 @@
-public class Main
-{
-    public static void main(String args[])
-    {
+public class Main {
+    public static void main(String args[]) {
         AnimalFactory animalFactory = new AnimalFactory();
 
         Animal animal1 = animalFactory.createAnimal("canine");

@@ -1,6 +1,5 @@
 package tw.hacker.java;
 
-public interface IMenu
-{
+public interface IMenu {
     public void print();
 }

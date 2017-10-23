@@ -1,4 +1,3 @@
-public interface IStockFactory
-{
+public interface IStockFactory {
     Stock createStock();
 }

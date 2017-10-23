@@ -1,4 +1,3 @@
-public interface Order
-{
+public interface Order {
     void execute();
 }

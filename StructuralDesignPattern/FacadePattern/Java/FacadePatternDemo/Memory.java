@@ -1,10 +1,8 @@
 package tw.hacker.java;
 
-public class Memory implements IComponent
-{
+public class Memory implements IComponent {
     @Override
-    public void doProcessing()
-    {
+    public void doProcessing() {
         System.out.println("Memory is processing.");
     }
 }

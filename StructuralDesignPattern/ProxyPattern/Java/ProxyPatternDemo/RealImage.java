@@ -1,21 +1,17 @@
-public class RealImage implements IImage
-{
+public class RealImage implements IImage {
     private String fileName;
 
-    public RealImage(String fileName)
-    {
+    public RealImage(String fileName) {
         this.fileName = fileName;
         this.loadImage(this.fileName);
     }
 
     @Override
-    public void display()
-    {
+    public void display() {
         System.out.println(this.fileName);
     }
 
-    public void loadImage(String fileName)
-    {
+    public void loadImage(String fileName) {
         System.out.println("Load " + fileName);
     }
 }

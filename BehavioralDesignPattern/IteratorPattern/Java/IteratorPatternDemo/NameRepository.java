@@ -1,8 +1,6 @@
-public class NameRepository implements Container
-{
+public class NameRepository implements Container {
     @Override
-    public Iterator getIterator()
-    {
+    public Iterator getIterator() {
         return new NameIterator();
     }
 }

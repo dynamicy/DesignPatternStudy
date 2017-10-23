@@ -1,8 +1,6 @@
-public class FoxFactory implements IAnimalFactory
-{
+public class FoxFactory implements IAnimalFactory {
     @Override
-    public Animal createAnimal()
-    {
+    public Animal createAnimal() {
         return new Fox();
     }
 }

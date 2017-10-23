@@ -1,4 +1,3 @@
-public interface Animal
-{
+public interface Animal {
     public abstract void makeSound();
 }

@@ -1,4 +1,3 @@
-public abstract class EmailDecorator implements IEmail
-{
+public abstract class EmailDecorator implements IEmail {
     IEmail originalEmail;
 }

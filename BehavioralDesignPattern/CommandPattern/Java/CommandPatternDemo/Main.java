@@ -1,7 +1,5 @@
-public class Main
-{
-    public static void main(String[] args)
-    {
+public class Main {
+    public static void main(String[] args) {
         IStockFactory ibmStockFactory = new IBMStockFactory();
         Stock IBMStock = ibmStockFactory.createStock();
 

@@ -1,13 +1,8 @@
-public class AbstractFactory
-{
-    public SpeciesFactory getSpeciesFactory(String type)
-    {
-        if ("mammal".equals(type))
-        {
+public class AbstractFactory {
+    public SpeciesFactory getSpeciesFactory(String type) {
+        if ("mammal".equals(type)) {
             return new MammalFactory();
-        }
-        else
-        {
+        } else {
             return new ReptileFactory();
         }
     }

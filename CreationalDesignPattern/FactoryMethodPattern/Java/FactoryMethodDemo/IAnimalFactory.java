@@ -1,4 +1,3 @@
-public interface IAnimalFactory
-{
+public interface IAnimalFactory {
     Animal createAnimal();
 }

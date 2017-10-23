@@ -1,8 +1,6 @@
-public class Fox extends Animal
-{
+public class Fox extends Animal {
     @Override
-    public String makeSound()
-    {
+    public String makeSound() {
         return "Ssbb";
     }
 }

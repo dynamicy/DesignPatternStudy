@@ -1,8 +1,7 @@
 import java.util.*;
 
 public class BuilderPattern {
-	public static void main(String args[])
-	{
+    public static void main(String args[]) {
         // Create director and builders
         Director tDirector = new Director();
 
@@ -17,78 +16,66 @@ public class BuilderPattern {
         tDirector.Construct(tBuilder2);
         Product tProduct2 = tBuilder2.GetResult();
         tProduct2.Show();
-	}
+    }
 }
 
-class Director
-{
-    public void Construct(Builder builder)
-    {
+class Director {
+    public void Construct(Builder builder) {
         builder.BuildPartA();
         builder.BuildPartB();
     }
 }
 
-abstract class Builder
-{
+abstract class Builder {
     public abstract void BuildPartA();
+
     public abstract void BuildPartB();
+
     public abstract Product GetResult();
 }
 
-class ConcreteBuilder1 extends Builder
-{
+class ConcreteBuilder1 extends Builder {
     private Product mProduct = new Product();
 
-    public void BuildPartA()
-    {
+    public void BuildPartA() {
         mProduct.Add("Part A");
     }
 
-    public void BuildPartB()
-    {
+    public void BuildPartB() {
         mProduct.Add("Part B");
     }
 
-    public Product GetResult()
-    {
+    public Product GetResult() {
         return mProduct;
     }
 }
 
-class ConcreteBuilder2 extends Builder
-{
+class ConcreteBuilder2 extends Builder {
     private Product mProduct = new Product();
 
-    public void BuildPartA()
-    {
+    public void BuildPartA() {
         mProduct.Add("Part X");
     }
 
-    public void BuildPartB()
-    {
+    public void BuildPartB() {
         mProduct.Add("Part Y");
     }
 
-    public Product GetResult()
-    {
+    public Product GetResult() {
         return mProduct;
     }
 }
 
-class Product
-{
+class Product {
     private ArrayList<String> szParts = new ArrayList<String>();
 
-    public void Add(String pPart)
-    {
+    public void Add(String pPart) {
         szParts.add(pPart);
     }
 
-    public void Show()
-    {
-    	System.out.println("\nParts on product:");
-        for(int i = 0; i < szParts.size(); ++i)
-        	System.out.println(szParts.get(i));
+    public void Show() {
+        System.out.println("\nParts on product:");
+        for (int i = 0; i < szParts.size(); ++i)
+            System.out.println(szParts.get(i));
     }
 }

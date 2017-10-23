@@ -1,8 +1,6 @@
-public class IBMStockFactory implements IStockFactory
-{
+public class IBMStockFactory implements IStockFactory {
     @Override
-    public Stock createStock()
-    {
+    public Stock createStock() {
         return new IBMStock();
     }
 }

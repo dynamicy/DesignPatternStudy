@@ -1,9 +1,7 @@
 package tw.hacker.java;
 
-public class Main
-{
-    public static void main(String args[])
-    {
+public class Main {
+    public static void main(String args[]) {
         CompositeMenu breakfastMenu = new CompositeMenu();
         CompositeMenu luncuMenu = new CompositeMenu();
 

@@ -1,4 +1,3 @@
-public interface IImage
-{
+public interface IImage {
     void display();
 }

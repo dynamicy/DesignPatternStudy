@@ -1,7 +1,5 @@
-public class Main
-{
-    public static void main(String args[])
-    {
+public class Main {
+    public static void main(String args[]) {
         int number1 = 10, number2 = 5, result = 0;
         Context context = new Context(new AddOperation());
         result = context.doStrategy(number1, number2);

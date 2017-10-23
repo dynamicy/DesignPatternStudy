@@ -1,15 +1,12 @@
-public class Circle implements IShape
-{
+public class Circle implements IShape {
     private String color;
 
-    public Circle(String color)
-    {
+    public Circle(String color) {
         this.color = color;
     }
 
     @Override
-    public void draw()
-    {
+    public void draw() {
         System.out.println("Color: " + color);
     }
 }

@@ -1,4 +1,3 @@
-public interface IEmail
-{
+public interface IEmail {
     public String getContents();
 }
