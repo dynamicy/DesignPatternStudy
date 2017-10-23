@@ -7,6 +7,7 @@ import io.csie.chris.stock.common.IStock;
 public class Main {
 
     public static void main(String[] args) {
+
         IStockFactory ibmStockFactory = new IBMStockFactory();
         IStock IBMStock = ibmStockFactory.createStock();
 
