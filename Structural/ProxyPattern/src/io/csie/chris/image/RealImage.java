@@ -1,4 +1,9 @@
+package io.csie.chris.image;
+
+import io.csie.chris.image.common.IImage;
+
 public class RealImage implements IImage {
+
     private String fileName;
 
     public RealImage(String fileName) {

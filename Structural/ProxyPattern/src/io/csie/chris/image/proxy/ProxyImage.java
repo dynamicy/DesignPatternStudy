@@ -1,7 +1,13 @@
+package io.csie.chris.image.proxy;
+
+import io.csie.chris.image.RealImage;
+import io.csie.chris.image.common.IImage;
+
 /**
  * Created by chris on 1/4/15.
  */
 public class ProxyImage implements IImage {
+
     private RealImage realImage;
     private String fileName;
 
