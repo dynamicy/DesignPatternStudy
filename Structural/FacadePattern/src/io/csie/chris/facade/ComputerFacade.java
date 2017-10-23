@@ -1,6 +1,11 @@
-package tw.hacker.java;
+package io.csie.chris.facade;
+
+import io.csie.chris.component.CPU;
+import io.csie.chris.component.HardDrive;
+import io.csie.chris.component.Memory;
 
 public class ComputerFacade {
+
     private CPU cpu;
     private Memory memory;
     private HardDrive hardDrive;
