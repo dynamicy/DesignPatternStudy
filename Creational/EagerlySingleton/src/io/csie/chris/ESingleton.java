@@ -1,4 +1,7 @@
+package io.csie.chris;
+
 public class ESingleton {
+
     // Use static initiallizer, that will make instace created fast.
     private static ESingleton instance = new ESingleton();
 
