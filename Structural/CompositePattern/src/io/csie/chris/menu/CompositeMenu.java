@@ -1,11 +1,12 @@
-package tw.hacker.java;
+package io.csie.chris.menu;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CompositeMenu implements IMenu {
+
     // Collection of Menu items
-    private List<IMenu> menuList = new ArrayList<IMenu>();
+    private List<IMenu> menuList = new ArrayList<>();
 
     @Override
     public void print() {

@@ -1,6 +1,7 @@
-package tw.hacker.java;
+package io.csie.chris.menu;
 
 public class Item implements IMenu {
+
     private String name;
     private int price;
 

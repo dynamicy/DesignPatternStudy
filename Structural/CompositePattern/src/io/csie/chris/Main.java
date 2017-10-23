@@ -1,7 +1,12 @@
-package tw.hacker.java;
+package io.csie.chris;
+
+import io.csie.chris.menu.CompositeMenu;
+import io.csie.chris.menu.Item;
 
 public class Main {
+
     public static void main(String args[]) {
+
         CompositeMenu breakfastMenu = new CompositeMenu();
         CompositeMenu luncuMenu = new CompositeMenu();
 
