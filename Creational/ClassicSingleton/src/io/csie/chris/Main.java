@@ -1,6 +1,11 @@
-class Main {
+package io.csie.chris;
+
+public class Main {
+
     public static void main(String[] args) {
+
         Singleton singletonInstance1 = Singleton.getInstance();
+
         Singleton singletonInstance2 = Singleton.getInstance();
 
         if (singletonInstance1 == singletonInstance2) {

@@ -1,4 +1,7 @@
-class Singleton {
+package io.csie.chris;
+
+public class Singleton {
+
     private static Singleton instance;
 
     // Prevent creating new instance from other class.
