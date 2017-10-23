@@ -1,13 +1,14 @@
+package io.csie.chris.iterator;
+
 public class NameIterator implements Iterator {
-    public String names[] = {"Apple", "Banana", "Car", "Dog", "Elephant", "Fork"};
-    int index;
+
+    private String names[] = {"Apple", "Banana", "Car", "Dog", "Elephant", "Fork"};
+
+    private int index;
 
     @Override
     public boolean hasNext() {
-        if (index < names.length) {
-            return true;
-        }
-        return false;
+        return index < names.length;
     }
 
     @Override
