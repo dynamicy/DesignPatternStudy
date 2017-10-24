@@ -1,8 +1,10 @@
-package io.csie.chris.expression;
+package io.csie.chris.expression.operation;
+
+import io.csie.chris.expression.common.Expression;
 
 import java.util.Map;
 
-public class Multiplication implements Expression{
+public class Multiplication implements Expression {
 
     private Expression leftOperand;
 

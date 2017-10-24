@@ -1,5 +1,7 @@
 package io.csie.chris.expression;
 
+import io.csie.chris.expression.common.Expression;
+
 import java.util.Map;
 
 public class Variable implements Expression {
