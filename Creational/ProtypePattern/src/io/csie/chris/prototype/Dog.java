@@ -10,7 +10,6 @@ public class Dog implements IPrototype {
         this.sound = sound;
     }
 
-    // Make a copy from io.csie.chris.prototype.common.IPrototype
     @Override
     public IPrototype doClone() {
         return new Dog(sound);

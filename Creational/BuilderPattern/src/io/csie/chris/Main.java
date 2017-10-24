@@ -1,24 +1,27 @@
 package io.csie.chris;
 
 import io.csie.chris.builder.*;
+import io.csie.chris.builder.common.Builder;
+import io.csie.chris.builder.common.Director;
+import io.csie.chris.builder.common.Product;
 
 public class Main {
 
     public static void main(String args[]) {
 
         // Create director and builders
-        Director tDirector = new Director();
+        Director director = new Director();
 
-        Builder tBuilder1 = new ConcreteBuilder1();
-        Builder tBuilder2 = new ConcreteBuilder2();
+        Builder builder1 = new ConcreteBuilder1();
+        Builder builder2 = new ConcreteBuilder2();
 
         // Construct two products
-        tDirector.Construct(tBuilder1);
-        Product tProduct1 = tBuilder1.GetResult();
-        tProduct1.Show();
+        director.Construct(builder1);
+        Product product1 = builder1.GetResult();
+        product1.Show();
 
-        tDirector.Construct(tBuilder2);
-        Product tProduct2 = tBuilder2.GetResult();
-        tProduct2.Show();
+        director.Construct(builder2);
+        Product product2 = builder2.GetResult();
+        product2.Show();
     }
 }

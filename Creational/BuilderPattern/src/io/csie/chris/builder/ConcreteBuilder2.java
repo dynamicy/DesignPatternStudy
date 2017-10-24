@@ -1,5 +1,8 @@
 package io.csie.chris.builder;
 
+import io.csie.chris.builder.common.Builder;
+import io.csie.chris.builder.common.Product;
+
 public class ConcreteBuilder2 extends Builder {
 
     private Product mProduct = new Product();

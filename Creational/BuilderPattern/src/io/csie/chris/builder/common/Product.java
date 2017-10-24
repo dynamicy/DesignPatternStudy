@@ -1,10 +1,10 @@
-package io.csie.chris.builder;
+package io.csie.chris.builder.common;
 
 import java.util.ArrayList;
 
 public class Product {
 
-    private ArrayList<String> szParts = new ArrayList<String>();
+    private ArrayList<String> szParts = new ArrayList<>();
 
     public void Add(String pPart) {
         szParts.add(pPart);
@@ -14,6 +14,7 @@ public class Product {
 
         System.out.println("\nParts on product:");
 
-        for (String szPart : szParts) System.out.println(szPart);
+        for (String szPart : szParts)
+            System.out.println(szPart);
     }
 }

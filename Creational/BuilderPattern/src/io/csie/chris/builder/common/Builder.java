@@ -1,4 +1,4 @@
-package io.csie.chris.builder;
+package io.csie.chris.builder.common;
 
 public abstract class Builder {
 
