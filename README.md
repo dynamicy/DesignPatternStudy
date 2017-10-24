@@ -22,6 +22,8 @@ DesignPatternStudy
 ## |------ 2. Command Pattern <br>
 ## |------ 3. Strategy Pattern <br>
 ## |------ 4. Iterator Pattern <br>
+## |------ 5. Observer Pattern <br>
+## |------ 6. Interpreter Pattern <br>
 
 Our Discussion:
 https://designpattern.hackpad.com/The-Design-Pattern-Study-Group-of-Greeks-7hFUlBCoSNo
