@@ -13,5 +13,9 @@ public class Main {
         AppleRemoteControl myRemoteControl = new AppleRemoteControl(myTV);
 
         myRemoteControl.setChannelPad(200);
+
+        myRemoteControl.turnOn();
+
+        myRemoteControl.turnOff();
     }
 }

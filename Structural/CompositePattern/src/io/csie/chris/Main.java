@@ -22,5 +22,18 @@ public class Main {
         mainMenu.add(luncuMenu);
 
         mainMenu.print();
+
+
+        CompositeMenu dinnerMenu = new CompositeMenu();
+
+        dinnerMenu.add(new Item("8 pond beef", 200));
+
+        CompositeMenu dailyMenu = new CompositeMenu();
+
+        dailyMenu.add(mainMenu);
+        dailyMenu.add(dinnerMenu);
+
+        dailyMenu.print();
+
     }
 }
