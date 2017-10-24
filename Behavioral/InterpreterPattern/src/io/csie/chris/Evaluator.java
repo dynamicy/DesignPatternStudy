@@ -2,10 +2,7 @@ package io.csie.chris;
 
 import io.csie.chris.expression.*;
 import io.csie.chris.expression.common.Expression;
-import io.csie.chris.expression.operation.Divide;
-import io.csie.chris.expression.operation.Minus;
-import io.csie.chris.expression.operation.Multiplication;
-import io.csie.chris.expression.operation.Plus;
+import io.csie.chris.expression.operation.*;
 
 import java.util.Map;
 import java.util.Stack;
@@ -18,29 +15,37 @@ public class Evaluator implements Expression {
 
         final Stack<Expression> expressionStack = new Stack<>();
 
+        Expression rightOperand;
+        Expression leftOperand;
+        Expression subExpression;
+
         for (final String token : expression.split(" ")) {
             switch (token) {
                 case "+":
-                    final Expression addExpression = new Plus(expressionStack.pop(), expressionStack.pop());
-                    expressionStack.push(addExpression);
+                    subExpression = new Plus(expressionStack.pop(), expressionStack.pop());
+                    expressionStack.push(subExpression);
                     break;
                 case "-":
-                    // it's necessary remove first the right operand from the stack
-                    final Expression right = expressionStack.pop();
-                    // ..and after the left one
-                    final Expression left = expressionStack.pop();
-                    final Expression subExpression = new Minus(left, right);
+                    rightOperand = expressionStack.pop();
+                    leftOperand = expressionStack.pop();
+                    subExpression = new Minus(leftOperand, rightOperand);
                     expressionStack.push(subExpression);
                     break;
                 case "*":
-                    final Expression multiExpression = new Multiplication(expressionStack.pop(), expressionStack.pop());
-                    expressionStack.push(multiExpression);
+                    subExpression = new Multiplication(expressionStack.pop(), expressionStack.pop());
+                    expressionStack.push(subExpression);
                     break;
                 case  "/":
-                    final Expression rightOperand = expressionStack.pop();
-                    final Expression leftOperand = expressionStack.pop();
-                    final Expression divideExpression = new Divide(leftOperand, rightOperand);
-                    expressionStack.push(divideExpression);
+                    rightOperand = expressionStack.pop();
+                    leftOperand = expressionStack.pop();
+                    subExpression = new Divide(leftOperand, rightOperand);
+                    expressionStack.push(subExpression);
+                    break;
+                case "^":
+                    rightOperand = expressionStack.pop();
+                    leftOperand = expressionStack.pop();
+                    subExpression = new Power(leftOperand, rightOperand);
+                    expressionStack.push(subExpression);
                     break;
                 default:
                     expressionStack.push(new Variable(token));
