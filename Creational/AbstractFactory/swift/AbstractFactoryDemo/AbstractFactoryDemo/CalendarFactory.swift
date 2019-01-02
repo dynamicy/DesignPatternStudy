@@ -33,13 +33,13 @@ protocol CalendarFactory {
 class GoogleCalendarFactory: CalendarFactory {
     
     func createCalendar() -> Calendar? {
-        return Google(accessToken: "Google", refreshToken: "", userName: "")
+        return Google(accessToken: "Google-Access-Token", refreshToken: "Google-Refresh-Token", userName: "Google")
     }
 }
 
 class MicrosoftCalendarFactory: CalendarFactory {
     func createCalendar() -> Calendar? {
-        return Microsoft(accessToken: "Microsoft", refreshToken: "", userName: "")
+        return Microsoft(accessToken: "Microsoft-Access-Token", refreshToken: "Microsoft-Refresh-Token", userName: "Microsoft")
     }
 }
 
